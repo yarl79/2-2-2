@@ -60,11 +60,6 @@ public class WebConfig implements WebMvcConfigurer {
     }
 
     @Bean
-    public CarService getCarService() {
-        return new CarService();
-    }
-
-    @Bean
     public LocaleResolver localeResolver() {
         SessionLocaleResolver resolver = new SessionLocaleResolver();
         resolver.setDefaultLocale(Locale.US);
